@@ -1,6 +1,93 @@
 .titulo1{
     text-align: center;
+    font-size: 30px;
 }
 #container{
     position: relative;
+    height: 100%;
+    background-color: rgb(185, 175, 235);
+    
+}
+.nav{
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.nav li{
+    padding: 0 60px;
+    display: flex;
+    
+}
+.nav li a{
+    text-align: center;
+}
+.navContent{
+    background-color: rgb(88, 88, 88);
+    margin: 0 10%;
+    border-radius: 0 0 20px 20px;
+}
+.navContent ul  li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+.navContent  ul  li a:hover{
+    color: rgb(185, 175, 235);
+    background-color: rgb(88, 88, 88);
+}
+.nav-underline:hover{
+    color: white;
+}
+.card img{
+    width: 50%;
+    height: 350px;
+    object-fit: cover;
+    
+}
+.card{
+    display: flex;
+    flex-direction: row;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.row{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.navbar-collapse {
+    margin-top: -8px;
+    
+}
+.navbar-collapse{
+    transition: transform 1s ease-in-out;
+}
+.navbar-expand-md {
+    display: flex;
+    margin-top: -8px;
+    justify-content: center;
+}
+.menuAdjust{
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    margin-top: -8px;
+    transition: transform 1s ease-in-out;
+}
+.navbar-toggler {
+    background-color: rgb(88, 88, 88);
+    width: 100px;
+    border-radius: 0 0 8px 8px;
+    
+}
+.menuIcon{
+    color: white;
+}
+.navbar-toggler:focus {
+ 
+    box-shadow: none;
 }
