@@ -91,3 +91,20 @@
  
     box-shadow: none;
 }
+
+.titulocontacto{
+    padding: 0 10%;
+}
+
+.textocontact{
+    font-weight: bold;
+    margin: 0 10%;
+}
+
+.numcontact{
+    margin: 0 10%;
+}
+
+.emailcontact{
+    margin: 0 10%;
+}
