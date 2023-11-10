@@ -92,12 +92,25 @@
     box-shadow: none;
 }
 
-.titulocontacto{
+.titulocontacto1{
     padding: 0 10%;
+    font-size: 45px;
+    color: blueviolet;
 }
 
-.textocontact{
+.titulocontact2{
+    margin: 0 10%;
+    font-size: 30px;
+}
+.textocontact1{
+    margin: 0 10%;
+}
+
+.textocontact2{
     font-weight: bold;
+    margin: 0 10%;
+}
+.moradacontact{
     margin: 0 10%;
 }
 
@@ -106,5 +119,14 @@
 }
 
 .emailcontact{
+    margin: 0 10%;
+}
+
+.titulosobre{
+    margin: 0 10%;
+
+}
+
+.textosobre{
     margin: 0 10%;
 }
