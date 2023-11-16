@@ -130,3 +130,15 @@
 .textosobre{
     margin: 0 10%;
 }
+
+.imgcontact{
+    margin: 0 10%;
+    height: 250px;
+}
+
+
+.obriganome{
+    color: red;
+    font-weight: 30px;
+    display: block;
+}
