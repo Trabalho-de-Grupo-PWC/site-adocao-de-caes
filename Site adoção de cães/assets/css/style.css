@@ -1,6 +1,10 @@
 .titulo1{
     text-align: center;
     font-size: 30px;
+    margin-bottom: 0;
+}
+.titulo{
+    padding: 50px;
 }
 #container{
     position: relative;
@@ -54,9 +58,11 @@
     justify-content: center;
 }
 .row{
-    margin: 10px;
     display: flex;
     justify-content: center;
+}
+.pets{
+    margin: 10px 10px 0;
 }
 .navbar-collapse{
     transition: transform 1s ease-in-out;
@@ -139,13 +145,23 @@
     font-weight: 30px;
     display: block;
 }
-section{
+.pet-section{
     background-color: rgb(103, 166, 238);
     padding-top: 15px;
 }
-#carouselExampleSlidesOnly{
-    width: 300px;
-    
+.slides{
     display: flex;
     justify-content: center;
-}
+    background-image: src("https://xoxobella.com/wp-content/uploads/2023/01/best_dog_captions-5-1024x1484.jpg");
+    text-align: center;
+  }
+
+  #carouselExampleSlidesOnly {
+    padding: 10px 500px;
+    max-width: 90%;
+    background-color: rgba(88, 88, 88, 0.116);
+    background-image: src("https://xoxobella.com/wp-content/uploads/2023/01/best_dog_captions-5-1024x1484.jpg");
+    border-radius: 10px; /* ou ajuste conforme necessário */
+  }
+  #carouselExampleSlidesOnly img{
+  }
