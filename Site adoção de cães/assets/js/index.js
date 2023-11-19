@@ -21,10 +21,13 @@ $(document).ready(function () {
                     clicked = false
                 }
             });
+        }else{
+            menuOpened.style.transform = 'translateY(0px)';
+            menuAdjust.style.transform = 'translateX(0px)';
         }
     }
     toggleMenu();
-
+    
     $(window).resize(function () {
         toggleMenu();
     });
