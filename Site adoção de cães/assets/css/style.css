@@ -152,21 +152,19 @@
 .slides{
     display: flex;
     justify-content: center;
-    background-image: src("https://xoxobella.com/wp-content/uploads/2023/01/best_dog_captions-5-1024x1484.jpg");
     text-align: center;
   }
 
-  #carouselExampleSlidesOnly {
-    padding: 10px 500px;
-    max-width: 90%;
-    background-color: rgba(88, 88, 88, 0.116);
-    background-image: src("https://xoxobella.com/wp-content/uploads/2023/01/best_dog_captions-5-1024x1484.jpg");
-    border-radius: 10px; /* ou ajuste conforme necessário */
-  }
-  #carouselExampleSlidesOnly img{
+  #Image-slide {
+    padding: 10px 25%;
+    width: 90%;
+    
+    background-color: rgba(0, 119, 255, 0.575);
   }
 
-#adotar {
-  position: relative;
-  background-color: red
+  #Image-slide img{
+    border-radius: 5px;
+  }
+
+
   }
