@@ -25,7 +25,6 @@ $(document).ready(function () {
                 }
             });
 
-
         } else {
             menuOpened.style.transform = 'translateY(0px)';
             menuAdjust.style.transform = 'translateX(0px)';
