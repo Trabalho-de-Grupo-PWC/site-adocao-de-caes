@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="icon" href="assets/img/paw-xxl.ico"image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Loja</title>
 </head>
@@ -46,66 +47,108 @@
           </div>
         </div>
       </nav>
-          <h1 class="petsTitulo">Pets disponiveis:</h1>
+          <h1 class="petsTitulo">Rações:</h1>
           <section class="pet-section">
             <div class="row pets">
               <div class="col-md-4">
                 <div class="card mb-4">
                   <img
-                    src="https://pegadanatural.com.br/wp-content/uploads/3-maneiras-de-cuidar-do-seu-filhote-de-cachorro-com-qualidade.jpg"
-                    class="card-img-top" alt="...">
+                    src="https://www.tiendanimal.pt/dw/image/v2/BDLQ_PRD/on/demandware.static/-/Sites-kiwoko-master-catalog/default/dw9d499e40/images/pienso_perros_purina_pro_plan_adult_medium_opti_balance_PRO12028384_M_1%20(1).jpg?sw=780&sh=780&q=85"
+                    class="card-img-top" alt="Imagem da Ração para Cão">
                   <div class="card-body">
-                    <h5 class="card-title">[Raça] Nome</h5>
-                    <p class="card-text">Ex:<br>Cão recém nascido da raça [raça] da cor [cor] etc...</p>
-                    <div class="d-flex align-items-center justify-content-between">
-                      <a href="#" class="btn btn-outline-secondary">Ver</a>
-                      <span class="text-body-secondary">Idade</span>
+                    <h5 class="card-title">[Marca] Nome da Ração</h5>
+                    <p class="card-text">Descrição da ração para cão.</p>
+                    <div class="d-flex flex-column align-items-center">
+                      <div class="form-group mb-3">
+                        <label for="quantidadeRacao">Quantidade:</label>
+                        <select class="form-control" id="quantidadeRacao" name="quantidadeRacao">
+                          <option value="1">1</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                        </select>
+                      </div>
+                      <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#modalComprarRacao">Comprar</button>
                     </div>
+                    <span class="text-body-secondary mt-2">Preço: [Preço da Ração]</span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img
+                    src="https://www.tiendanimal.pt/dw/image/v2/BDLQ_PRD/on/demandware.static/-/Sites-kiwoko-master-catalog/default/dw9d499e40/images/pienso_perros_purina_pro_plan_adult_medium_opti_balance_PRO12028384_M_1%20(1).jpg?sw=780&sh=780&q=85"
+                    class="card-img-top" alt="Imagem da Ração para Cão">
+                  <div class="card-body">
+                    <h5 class="card-title">[Marca] Nome da Ração</h5>
+                    <p class="card-text">Descrição da ração para cão.</p>
+                    <div class="d-flex flex-column align-items-center">
+                      <div class="form-group mb-3">
+                        <label for="quantidadeRacao">Quantidade:</label>
+                        <select class="form-control" id="quantidadeRacao" name="quantidadeRacao">
+                          <option value="1">1</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                        </select>
+                      </div>
+                      <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#modalComprarRacao">Comprar</button>
+                    </div>
+                    <span class="text-body-secondary mt-2">Preço: [Preço da Ração]</span>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="card mb-4">
                   <img
-                    src="https://pegadanatural.com.br/wp-content/uploads/3-maneiras-de-cuidar-do-seu-filhote-de-cachorro-com-qualidade.jpg"
-                    class="card-img-top" alt="...">
+                    src="https://www.tiendanimal.pt/dw/image/v2/BDLQ_PRD/on/demandware.static/-/Sites-kiwoko-master-catalog/default/dw9d499e40/images/pienso_perros_purina_pro_plan_adult_medium_opti_balance_PRO12028384_M_1%20(1).jpg?sw=780&sh=780&q=85"
+                    class="card-img-top" alt="Imagem da Ração para Cão">
                   <div class="card-body">
-                    <h5 class="card-title">[Raça] Nome</h5>
-                    <p class="card-text">Ex:<br>Cão recém nascido da raça [raça] da cor [cor] etc...</p>
-                    <div class="d-flex align-items-center justify-content-between">
-                      <a href="#" class="btn btn-outline-secondary">Ver</a>
-                      <span class="text-body-secondary">Idade</span>
+                    <h5 class="card-title">[Marca] Nome da Ração</h5>
+                    <p class="card-text">Descrição da ração para cão.</p>
+                    <div class="d-flex flex-column align-items-center">
+                      <div class="form-group mb-3">
+                        <label for="quantidadeRacao">Quantidade:</label>
+                        <select class="form-control" id="quantidadeRacao" name="quantidadeRacao">
+                          <option value="1">1</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                        </select>
+                      </div>
+                      <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#modalComprarRacao">Comprar</button>
                     </div>
+                    <span class="text-body-secondary mt-2">Preço: [Preço da Ração]</span>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="card mb-4">
                   <img
-                    src="https://pegadanatural.com.br/wp-content/uploads/3-maneiras-de-cuidar-do-seu-filhote-de-cachorro-com-qualidade.jpg"
-                    class="card-img-top" alt="...">
+                    src="https://www.tiendanimal.pt/dw/image/v2/BDLQ_PRD/on/demandware.static/-/Sites-kiwoko-master-catalog/default/dw9d499e40/images/pienso_perros_purina_pro_plan_adult_medium_opti_balance_PRO12028384_M_1%20(1).jpg?sw=780&sh=780&q=85"
+                    class="card-img-top" alt="Imagem da Ração para Cão">
                   <div class="card-body">
-                    <h5 class="card-title">[Raça] Nome</h5>
-                    <p class="card-text">Ex:<br>Cão recém nascido da raça [raça] da cor [cor] etc...</p>
-                    <div class="d-flex align-items-center justify-content-between">
-                      <a href="#" class="btn btn-outline-secondary">Ver</a>
-                      <span class="text-body-secondary">Idade</span>
+                    <h5 class="card-title">[Marca] Nome da Ração</h5>
+                    <p class="card-text">Descrição da ração para cão.</p>
+                    <div class="d-flex flex-column align-items-center">
+                      <div class="form-group mb-3">
+                        <label for="quantidadeRacao">Quantidade:</label>
+                        <select class="form-control" id="quantidadeRacao" name="quantidadeRacao">
+                          <option value="1">1</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                        </select>
+                      </div>
+                      <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#modalComprarRacao">Comprar</button>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card mb-4">
-                  <img
-                    src="https://pegadanatural.com.br/wp-content/uploads/3-maneiras-de-cuidar-do-seu-filhote-de-cachorro-com-qualidade.jpg"
-                    class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">[Raça] Nome</h5>
-                    <p class="card-text">Ex:<br>Cão recém nascido da raça [raça] da cor [cor] etc...</p>
-                    <div class="d-flex align-items-center justify-content-between">
-                      <a href="#" class="btn btn-outline-secondary">Ver</a>
-                      <span class="text-body-secondary">Idade</span>
-                    </div>
+                    <span class="text-body-secondary mt-2">Preço: [Preço da Ração]</span>
                   </div>
                 </div>
               </div>

@@ -265,3 +265,24 @@
     text-decoration: inherit;
     color: inherit;
 }
+.contatosDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 10%;
+  }
+  
+  .infoContatos {
+    max-width: 600px; /* Defina uma largura máxima para o conteúdo, se desejar */
+  }
+  
+  .titulocontacto1 {
+    color: #333; /* Cor do texto, se desejar alterar */
+  }
+  .contatosDiv img{
+   max-width: 80%;
+   border-radius: 5px;
+   margin-bottom: 10px;
+  }
