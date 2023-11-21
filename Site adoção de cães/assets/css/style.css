@@ -9,6 +9,12 @@
     font-size: 30px;
     margin-bottom: 0;
 }
+.petsTitulo{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 0;
+    padding: 50px;
+}
 .subtitulo{
     text-align: center;
     margin-top: 5px;
@@ -234,13 +240,25 @@
     display: flex;
     padding: 3% 20% 0 20%;
   }
-  .racaoBackground:hover{
+  .racaoInfo{
     background-color: rgba(88, 88, 88, 0.77);
     border-radius: 10px;
+    transition: 1s;
+  }
+  .racaoInfo:hover{
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgb(88, 88, 88);
+    border-radius: 10px;
+    cursor: pointer;
   }
   .tituloRacoes{
   padding: 1%;
   display: flex;
   justify-content: center;
   font-size: 30px;
+}
+.racaoInfo a{
+    text-decoration: inherit;
+    color: inherit;
 }

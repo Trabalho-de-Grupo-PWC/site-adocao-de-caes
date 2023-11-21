@@ -1,6 +1,7 @@
 const menuButton = document.querySelector('.navbar-toggler');
 const menuOpened = document.querySelector('.navbar-collapse');
 const menuAdjust = document.querySelector('.menuAdjust');
+const slide = document.querySelector('.carousel-item');
 $(document).ready(function () {
     function toggleMenu() {
         if ($(window).width() < 768) {
@@ -20,6 +21,9 @@ $(document).ready(function () {
                     $('.navbar-collapse').removeClass('show');
                     clicked = false
                 }
+            });
+            slide.addEventListener('click', function() {
+                Window.location.href = 'https://www.google.com.br';
             });
         }else{
             menuOpened.style.transform = 'translateY(0px)';
