@@ -1,9 +1,29 @@
+@media screen and (max-width: 767px) {
+    .form_section {
+        display: flex;
+        justify-content: center;
+    }
+    .carousel-item img:hover{
+        cursor: pointer;
+      }
+}
 .titulo1{
     text-align: center;
     font-size: 30px;
     margin-bottom: 0;
 }
-.titulo{
+.petsTitulo{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 0;
+    padding: 50px;
+}
+.subtitulo{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 15px;
+}
+.titulo{ 
     padding: 50px;
 }
 #container{
@@ -156,15 +176,92 @@
   }
 
   #Image-slide {
-    padding: 10px 25%;
     width: 90%;
-    
+    max-width: 500px;
     background-color: rgba(0, 119, 255, 0.575);
   }
 
   #Image-slide img{
     border-radius: 5px;
   }
-
-
+  .titulo{
+    background-color: rgb(103, 166, 238);
   }
+  .disabled-content {
+    position: absolute;
+    background-color: rgb(103, 166, 238);
+    opacity: 1; 
+    transition: opacity 0.3s ease; 
+  }
+  .irparaLoja{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    opacity: 0;
+    margin-top: -25px;
+  }
+  .irparaLoja:hover{
+    background-color: rgba(255, 255, 255, 0.527);
+    width: 100%;
+    height: 102%;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    opacity: 1;
+    padding: 0 25px;
+  }
+  .divLojaBtn{
+    width: 453px;
+    height: 90px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .divLojaBtn a{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    max-width: 460px;
+    width: 90%;
+  }
+  .footerclass{
+    display: flex;
+  }
+  .form_section{
+    display: flex;
+    padding: 3% 20% 0 20%;
+  }
+  .racaoInfo{
+    background-color: rgba(88, 88, 88, 0.77);
+    border-radius: 10px;
+    transition: 1s;
+  }
+  .racaoInfo:hover{
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgb(88, 88, 88);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .tituloRacoes{
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+.racaoInfo a{
+    text-decoration: inherit;
+    color: inherit;
+}
