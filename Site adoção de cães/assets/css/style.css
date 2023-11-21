@@ -265,20 +265,6 @@
     text-decoration: inherit;
     color: inherit;
 }
-/*.contatosDiv{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 10%;
-    max-width: 1200px;
-}
-.infoContatos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px 0;
-}*/
 .contatosDiv {
     display: flex;
     justify-content: center;
