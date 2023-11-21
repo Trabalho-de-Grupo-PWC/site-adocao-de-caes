@@ -3,6 +3,9 @@
         display: flex;
         justify-content: center;
     }
+    .carousel-item img:hover{
+        cursor: pointer;
+      }
 }
 .titulo1{
     text-align: center;
