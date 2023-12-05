@@ -69,8 +69,6 @@ let pet_redirect = document.querySelector('.pet_redirect');
 pet_redirect.addEventListener('click', function () {
   window.location.href = 'adotar.html';
 });
-
-
 var SlideImage = slideImageDiv.querySelector('img');
 var imagens = slideImageDiv.querySelectorAll('img');
 
