@@ -52,6 +52,7 @@ function redirectFunction(imagem) {
         
     }
 }
+//Botões
 let imagem1 = document.getElementById('racao1');
 imagem1.addEventListener('click', function () { 
     redirectFunction(imagem1);
@@ -64,6 +65,11 @@ let imagem3 = document.getElementById('racao3');
 imagem3.addEventListener('click', function () {
     redirectFunction(imagem3);
 });
+let pet_redirect = document.querySelector('.pet_redirect');
+pet_redirect.addEventListener('click', function () {
+  window.location.href = 'adotar.html';
+});
+
 
 var SlideImage = slideImageDiv.querySelector('img');
 var imagens = slideImageDiv.querySelectorAll('img');
