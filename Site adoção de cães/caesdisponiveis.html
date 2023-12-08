@@ -35,13 +35,13 @@
                 <a class="nav-link"  href="./loja.html">Loja</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"  href="./caesdisponiveis.html">Cães disponiveis</a>
+                <a class="nav-link active" aria-current="page"  href="./caesdisponiveis.html">Cães disponiveis</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./adotar.html">Adotar</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./favoritos.html">Favoritos</a>
+                <a class="nav-link" href="./favoritos.html">Favoritos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./contatos.html">Contactos</a>
@@ -50,9 +50,25 @@
           </div>
         </div>
       </nav>
-          <h1 class="petsTitulo">Adicionados aos favoritos:</h1>
+          <h1 class="petsTitulo">Caes disponiveis:</h1>
           <section class="pet-section">
             <div class="row pets">
+              <div class="col-md-4 card-pet">
+                <div class="card mb-4">
+                  <img
+                    src=""
+                    class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">[Raça] Nome</h5>
+                    <p class="card-text">Ex:<br>Cão recém nascido da raça [raça] da cor [cor] etc...</p>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <a href="#" class="btn btn-outline-secondary">Ver</a>
+                      <span class="cao-idade text-body-secondary">Idade</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!--
               <div class="col-md-4">
                 <div class="card mb-4">
                   <img
@@ -98,21 +114,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="card mb-4">
-                  <img
-                    src="https://pegadanatural.com.br/wp-content/uploads/3-maneiras-de-cuidar-do-seu-filhote-de-cachorro-com-qualidade.jpg"
-                    class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">[Raça] Nome</h5>
-                    <p class="card-text">Ex:<br>Cão recém nascido da raça [raça] da cor [cor] etc...</p>
-                    <div class="d-flex align-items-center justify-content-between">
-                      <a href="#" class="btn btn-outline-secondary">Ver</a>
-                      <span class="text-body-secondary">Idade</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            -->
             </div>
           </section>
           <footer class="bg-body-tertiary text-center text-lg-start">
@@ -122,7 +124,8 @@
           </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="assets/js/index.js"></script>
     <script src="assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/caesdisponiveis.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
