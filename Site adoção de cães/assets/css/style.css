@@ -7,6 +7,20 @@
         cursor: pointer;
       }
 }
+body {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(103, 166, 238);
+}
+body::-moz-scrollbar {
+  width: 0.5em;
+}
+
 .titulo1{
     text-align: center;
     font-size: 30px;
@@ -71,11 +85,6 @@
 .card{
     display: flex;
     flex-direction: row;
-}
-.card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 .row{
     display: flex;
@@ -246,7 +255,7 @@
   .racaoInfo{
     background-color: rgba(88, 88, 88, 0.77);
     border-radius: 10px;
-    transition: 1s;
+    transition: 0.5s;
   }
   .racaoInfo:hover{
     padding: 20px;
@@ -305,3 +314,25 @@
     left: 75%;
     transform: translate(-50%, -50%);
   }
+  .pet_redirect{
+    transition: 0.5s;
+  }
+  .pet_redirect:hover{
+    font-size: 19px;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px;
+    max-height: 300px;
+}
+img.card-img-top {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 300px;
+  max-height: 300px;
+}
