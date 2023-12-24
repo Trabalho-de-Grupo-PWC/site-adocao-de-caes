@@ -6,6 +6,10 @@
     .carousel-item img:hover{
         cursor: pointer;
       }
+      img.card-img-top {
+        max-width: 180px;
+        
+      }
 }
 body {
   overflow-y: scroll;
@@ -331,8 +335,11 @@ body::-moz-scrollbar {
 img.card-img-top {
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  min-height: 300px;
-  max-height: 300px;
+  min-height: 170px;
+  max-height: 170px;
+  margin-top: 60px;
+  border-radius: 7px;
+  margin-left: 3%;
 }
