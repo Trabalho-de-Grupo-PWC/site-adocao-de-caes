@@ -10,6 +10,7 @@
         max-width: 180px;
         
       }
+      
 }
 body {
   overflow-y: scroll;
@@ -342,4 +343,18 @@ img.card-img-top {
   margin-top: 60px;
   border-radius: 7px;
   margin-left: 3%;
+  max-width: 180px;
+}
+svg.addFavorites {
+  font-size: 25px;
+
+}
+svg.addFavorites:hover {
+  font-size: 27px;
+  transition: 1s;
+  cursor: pointer;
+  fill: rgb(218, 218, 7) !important;
+}
+.row.pets > div:first-child {
+  display: none;
 }
