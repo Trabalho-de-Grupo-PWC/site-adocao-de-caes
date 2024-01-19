@@ -353,7 +353,7 @@ svg.addFavorites:hover {
   font-size: 27px;
   transition: 1s;
   cursor: pointer;
-  fill: rgb(218, 218, 7) !important;
+  fill: rgb(218, 218, 7);
 }
 .row.pets > div:first-child {
   display: none;
