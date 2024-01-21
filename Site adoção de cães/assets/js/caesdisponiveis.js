@@ -30,15 +30,20 @@ $(document).ready(function () {
             $.each(data.animals, function (index, dog) {
                 var card = cloneCard.clone();
                 var hasPhotos = dog.photos && dog.photos.length > 0;
-                
+                if ((dog.description).length > 45) {
+                    var descricaoLimitada = (dog.description).substring(0, 45);
+                    $(".descricao", card).text(descricaoLimitada);
+                } else {
+                    $(".descricao", card).text(dog.description);
+                }
                     if (hasPhotos) {
                         $(".card-img-top", card).attr("src", dog.photos[0].full);
                     } else {
-                        $(".card-img-top", card).attr("src", "https://banner2.cleanpng.com/20180413/kie/kisspng-dog-computer-icons-pet-hop-5ad07f5a74e721.9363762815236135304788.jpg");
+                        $(".card-img-top", card).attr("src", "https://iconape.com/wp-content/png_logo_vector/dog.png");
                     }
                 $(".cao-idade", card).text(dog.age);
                 $(".card-title", card).text(dog.name);
-                $(".descricao", card).text(dog.description);
+                $(".descricao", card).text(descricaoLimitada);
                 $(".type-movie", card).text(dog.Type);
                 $(".runtime-movie", card).text(dog.Runtime);
                 var favBtn = $(".addFavorites", card);
@@ -55,7 +60,7 @@ $(document).ready(function () {
     });
     function updateVisual(button, value) {
             if (isFavorite(value.id)) {
-                button.css("color", "yellow");
+                button.css("color", "rgb(218, 218, 7)");
             } else {
                 
                 button.css("color", "grey");

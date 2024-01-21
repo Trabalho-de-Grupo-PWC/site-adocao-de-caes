@@ -358,3 +358,6 @@ svg.addFavorites:hover {
 .row.pets > div:first-child {
   display: none;
 }
+.descricao{
+  word-wrap: anywhere;
+}
