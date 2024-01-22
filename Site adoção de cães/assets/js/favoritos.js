@@ -30,6 +30,7 @@ $(document).ready(function () {
         updateFavorites(favBtn, favorito);
         verDados(btnVer, favorito);
         $(".pets").append(card);
+        $(".mensagem").css("display", "none");
     });
 
     $(".addFavorites").on("click", function (event) {

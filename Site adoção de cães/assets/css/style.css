@@ -386,3 +386,8 @@ nav {
   display: flex;
   justify-content: space-around;
 }
+.mensagem{
+  text-align: center;
+  font-size: 25px;
+  padding: 0 10% 25px ;
+}
