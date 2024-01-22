@@ -60,8 +60,9 @@ $(document).ready(function () {
     function updateVisual(button, value) {
             if (isFavorite(value.id)) {
                 button.css("color", "rgb(218, 218, 7)");
+                button.addClass("favorito");
             } else {
-                
+                button.removeClass("favorito");
                 button.css("color", "grey");
             }
         
@@ -79,8 +80,10 @@ $(document).ready(function () {
             button.on("click", function () {
                 if (isFavorite(dog.id)) {
                     removeFavorites(dog.id);
+                    button.removeClass("favorito");
                 } else {
                     addFavorites(dog);
+                    
                 }
                 updateVisual(button, dog);
             });

@@ -1,7 +1,6 @@
 $(document).ready(function () {
     // Obtém os dados do localStorage
     var dados = JSON.parse(localStorage.getItem("petAtual")) || [];
-
     // Obtém a tabela
     var table1 = $("#dadosTable tbody");
 
