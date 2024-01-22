@@ -421,3 +421,21 @@ img#imgLogo {
   text-align: justify;
   color: royalblue;
 }
+#IMGDevs {
+  min-width: 100px;
+  width: 40%;
+}
+.divDevs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:row;
+  text-align: center;
+}
+#Devinfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  text-align: center;
+}
