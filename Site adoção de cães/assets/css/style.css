@@ -391,3 +391,9 @@ nav {
   font-size: 25px;
   padding: 0 10% 25px ;
 }
+img#imgLogo {
+  width: 50px;
+}
+*, ::after, ::before {
+  box-sizing:unset;
+}
