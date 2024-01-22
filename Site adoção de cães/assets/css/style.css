@@ -154,13 +154,32 @@ body::-moz-scrollbar {
     margin: 0 10%;
 }
 
-.titulosobre{
-    margin: 0 10%;
-
+.titulosobrenos{
+  margin: 0 10%;
+  text-align: center;
+  color: royalblue;
 }
 
-.textosobre{
+.textosobrenos{
     margin: 0 10%;
+<<<<<<< Updated upstream
+=======
+    text-align: justify;
+    color: royalblue;
+    
+}
+
+.titulosobresite{
+  margin: 0 10%;
+  text-align: center;
+  color: royalblue;
+}
+
+.textosobresite{
+  margin: 0 10%;
+  text-align: justify;
+  color: royalblue;
+>>>>>>> Stashed changes
 }
 
 .imgcontact{
