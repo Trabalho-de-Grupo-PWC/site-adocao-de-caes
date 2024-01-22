@@ -166,6 +166,14 @@ body::-moz-scrollbar {
 
 .textosobre{
     margin: 0 10%;
+    text-align: justify;
+    color: royalblue;
+}
+
+.OSite{
+  margin: 0 10%;
+  text-align: justify;
+  color: royalblue;
 }
 
 .imgcontact{
