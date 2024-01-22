@@ -14,6 +14,6 @@ imagem3.addEventListener('click', function () {
 let pet_redirects = document.getElementsByClassName('pet_redirect');
 for (let i = 0; i < pet_redirects.length; i++) {
   pet_redirects[i].addEventListener('click', function () {
-    window.location.href = 'adotar.html';
+    window.location.href = './caesdisponiveis.html';
   });
 }

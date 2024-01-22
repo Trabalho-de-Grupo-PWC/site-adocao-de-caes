@@ -1,13 +1,6 @@
 var cloneCard = $(".card-pet").clone();
-
 $(document).ready(function () {
-    
     const petfinderApiUrl = "https://api.petfinder.com/v2/oauth2/token";
-    $(".lista-filmes").empty();
-    var inputsearch = $("#input-search").val();
-    $(".search-title").text("Pesquisa: " + inputsearch);
-    // Chama a API do Petfinder para obter o token de acesso
-
     $.ajax({
         url: petfinderApiUrl,
         method: "POST",
@@ -17,7 +10,6 @@ $(document).ready(function () {
             client_secret: 'qQ8vgYrB9ps0XQvDWRrmuSQETLfJQZxYDnZ5jTnx'
         }
     }).done(function (tokenData) {
-        // Use o token obtido para fazer chamadas à API do Petfinder.
         $.ajax({
             url: "https://api.petfinder.com/v2/animals?type=dog",
             method: "GET",
@@ -30,11 +22,14 @@ $(document).ready(function () {
             $.each(data.animals, function (index, dog) {
                 var card = cloneCard.clone();
                 var hasPhotos = dog.photos && dog.photos.length > 0;
-                if ((dog.description).length > 45) {
-                    var descricaoLimitada = (dog.description).substring(0, 45);
-                    $(".descricao", card).text(descricaoLimitada);
-                } else {
-                    $(".descricao", card).text(dog.description);
+                var descricaoLimitada ="";
+                if (dog.description) {
+                    if (dog.description.length > 75) {
+                        descricaoLimitada = (dog.description).substring(0, 72) + "...";
+                        $(".descricao", card).text(descricaoLimitada);
+                    } else {
+                        $(".descricao", card).text(dog.description);
+                    }
                 }
                     if (hasPhotos) {
                         $(".card-img-top", card).attr("src", dog.photos[0].full);
@@ -47,22 +42,27 @@ $(document).ready(function () {
                 $(".type-movie", card).text(dog.Type);
                 $(".runtime-movie", card).text(dog.Runtime);
                 var favBtn = $(".addFavorites", card);
+                var btnVer = $(".btnVer", card);
                 updateVisual(favBtn, dog);
                 updateFavorites(favBtn, dog);
+                verDados(btnVer, dog);
+
                 $(".pets").append(card);
             });
         });
     });
     $(".addFavorites").on("click", function (event) {
-        console.log("ooooooo");
         event.preventDefault();
-        alert("Please");
+    });
+    $(".btnVer").on("click", function (event) {
+        event.preventDefault();
     });
     function updateVisual(button, value) {
             if (isFavorite(value.id)) {
                 button.css("color", "rgb(218, 218, 7)");
+                button.addClass("favorito");
             } else {
-                
+                button.removeClass("favorito");
                 button.css("color", "grey");
             }
         
@@ -80,8 +80,10 @@ $(document).ready(function () {
             button.on("click", function () {
                 if (isFavorite(dog.id)) {
                     removeFavorites(dog.id);
+                    button.removeClass("favorito");
                 } else {
                     addFavorites(dog);
+                    
                 }
                 updateVisual(button, dog);
             });
@@ -102,5 +104,12 @@ $(document).ready(function () {
         localStorage.setItem("favoritos", JSON.stringify(favorites));
     }
 
+    function verDados(button, pet) {
+        button.on("click", function () {
+            var guardarpet = JSON.parse(localStorage.getItem("petAtual")) || [];
+            guardarpet = [pet];
+            localStorage.setItem("petAtual", JSON.stringify(guardarpet));
+        });
+    }
 });
 

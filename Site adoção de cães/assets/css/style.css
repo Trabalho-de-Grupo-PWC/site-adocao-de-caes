@@ -1,166 +1,170 @@
 @media screen and (max-width: 767px) {
-    .form_section {
-        display: flex;
-        justify-content: center;
+  .form_section {
+      display: flex;
+      justify-content: center;
+  }
+  .carousel-item img:hover{
+      cursor: pointer;
     }
-    .carousel-item img:hover{
-        cursor: pointer;
-      }
-      img.card-img-top {
-        max-width: 180px;
-        
-      }
+    img.card-img-top {
+      max-width: 180px;
       
+    }
+    
 }
 body {
-  overflow-y: scroll;
-  scrollbar-width: thin;
+overflow-y: scroll;
+scrollbar-width: thin;
 }
 body::-webkit-scrollbar {
-  width: 0.5em;
+width: 0.5em;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(103, 166, 238);
+background-color: rgb(103, 166, 238);
 }
 body::-moz-scrollbar {
-  width: 0.5em;
+width: 0.5em;
 }
 
 .titulo1{
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 0;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 0;
+  padding: 50px;
 }
 .petsTitulo{
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 0;
-    padding: 50px;
+  text-align: center;
+  font-size: 30px;
+  padding: 50px;
 }
 .subtitulo{
-    text-align: center;
-    margin-top: 5px;
-    font-size: 15px;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 15px;
 }
 .titulo{ 
-    padding: 50px;
+  padding: 50px;
 }
 #container{
-    position: relative;
-    height: 100%;
-    background-color: rgb(255, 255, 255);
-    
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+  background-color: rgb(255, 255, 255);
+  
 }
 .nav{
-    padding: 10px 20px 10px 20px;
-    display: flex;
-    justify-content: space-around;
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  justify-content: space-around;
 }
 .nav li{
-    padding: 0 60px;
-    display: flex;
-    
+  padding: 0 60px;
+  display: flex;
+  
 }
 .nav li a{
-    text-align: center;
+  text-align: center;
 }
 .navContent{
-    background-color: rgb(103, 166, 238);
-    margin: 0 10%;
-    border-radius: 0 0 20px 20px;
+  background-color: rgb(103, 166, 238);
+  margin: 0 10%;
+  border-radius: 0 0 20px 20px;
 }
 .navContent ul  li a{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
 }
 .navContent  ul  li a:hover{
-    color: white;
+  color: white;
 }
 .nav-underline:hover{
-    color: white;
+  color: white;
 }
 .card img{
-    width: 50%;
-    height: 350px;
-    object-fit: cover;
-    
+  width: 50%;
+  height: 350px;
+  object-fit: cover;
+  
 }
 .card{
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 .row{
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .pets{
-    margin: 10px 10px 0;
+  margin: 10px 10px 0;
+}
+.pet{
+margin: 10px 10px 0;
 }
 .navbar-collapse{
-    transition: transform 1s ease-in-out;
-    margin-top: -8px;
-    justify-content: center;
+  transition: transform 1s ease-in-out;
+  margin-top: -8px;
+  justify-content: center;
 }
 .navbar-expand-md {
-    display: flex;
-    margin-top: -8px;
-    justify-content: center;
+  display: flex;
+  margin-top: -8px;
+  justify-content: center;
 }
 .menuAdjust{
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    margin-top: -8px;
-    transition: transform 1s ease-in-out;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  margin-top: -8px;
+  transition: transform 1s ease-in-out;
 }
 .navbar-toggler {
-    background-color: rgb(88, 88, 88);
-    width: 100px;
-    border-radius: 0 0 8px 8px;
-    
+  background-color: rgb(88, 88, 88);
+  width: 100px;
+  border-radius: 0 0 8px 8px;
+  
 }
 .menuIcon{
-    color: white;
+  color: white;
 }
 .navbar-toggler:focus {
- 
-    box-shadow: none;
+
+  box-shadow: none;
 }
 
 .titulocontacto1{
-    padding: 0 10%;
-    font-size: 45px;
-    color: blueviolet;
+  padding: 0 10%;
+  font-size: 45px;
+  color: blueviolet;
 }
 
 .titulocontact2{
-    margin: 0 10%;
-    font-size: 30px;
+  margin: 0 10%;
+  font-size: 30px;
 }
 .textocontact1{
-    margin: 0 10%;
+  margin: 0 10%;
 }
 
 .textocontact2{
-    font-weight: bold;
-    margin: 0 10%;
+  font-weight: bold;
+  margin: 0 10%;
 }
 .moradacontact{
-    margin: 0 10%;
+  margin: 0 10%;
 }
 
 .numcontact{
-    margin: 0 10%;
+  margin: 0 10%;
 }
 
 .emailcontact{
-    margin: 0 10%;
+  margin: 0 10%;
 }
 
 .titulosobre{
-    margin: 0 10%;
+  margin: 0 10%;
 
 }
 
@@ -174,198 +178,255 @@ body::-moz-scrollbar {
   margin: 0 10%;
   text-align: justify;
   color: royalblue;
+  margin: 0 10%;
 }
 
 .imgcontact{
-    margin: 0 10%;
-    height: 250px;
+  margin: 0 10%;
+  height: 250px;
 }
 
 
 .obriganome{
-    color: red;
-    font-weight: 30px;
-    display: block;
+  color: red;
+  font-weight: 30px;
+  display: block;
 }
 .pet-section{
-    background-color: rgb(103, 166, 238);
-    padding-top: 15px;
+  background-color: rgb(103, 166, 238);
+  padding-top: 15px;
 }
 .slides{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-
-  #Image-slide {
-    width: 90%;
-    max-width: 500px;
-    background-color: rgba(0, 119, 255, 0.575);
-  }
-
-  #Image-slide img{
-    border-radius: 5px;
-  }
-  .titulo{
-    background-color: rgb(103, 166, 238);
-  }
-  .disabled-content {
-    position: absolute;
-    background-color: rgb(103, 166, 238);
-    opacity: 1; 
-    transition: opacity 0.3s ease; 
-  }
-  .irparaLoja{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 100;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    opacity: 0;
-    margin-top: -25px;
-  }
-  .irparaLoja:hover{
-    background-color: rgba(255, 255, 255, 0.527);
-    width: 100%;
-    height: 102%;
-    position: absolute;
-    z-index: 100;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    opacity: 1;
-    padding: 0 25px;
-  }
-  .divLojaBtn{
-    width: 453px;
-    height: 90px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
-  .divLojaBtn a{
-    color: black;
-    font-size: 20px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    max-width: 460px;
-    width: 90%;
-  }
-  .footerclass{
-    display: flex;
-  }
-  .form_section{
-    display: flex;
-    padding: 3% 20% 0 20%;
-  }
-  .racaoInfo{
-    background-color: rgba(88, 88, 88, 0.77);
-    border-radius: 10px;
-    transition: 0.5s;
-  }
-  .racaoInfo:hover{
-    padding: 20px;
-    font-size: 20px;
-    background-color: rgb(88, 88, 88);
-    border-radius: 10px;
-    cursor: pointer;
-  }
-  .tituloRacoes{
-  padding: 1%;
   display: flex;
   justify-content: center;
-  font-size: 30px;
+  text-align: center;
+}
+
+#Image-slide {
+  width: 90%;
+  max-width: 500px;
+  background-color: rgba(0, 119, 255, 0.575);
+}
+
+#Image-slide img{
+  border-radius: 5px;
+}
+.titulo{
+  background-color: rgb(103, 166, 238);
+}
+.disabled-content {
+  position: absolute;
+  background-color: rgb(103, 166, 238);
+  opacity: 1; 
+  transition: opacity 0.3s ease; 
+}
+.irparaLoja{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  opacity: 0;
+  margin-top: -25px;
+}
+.irparaLoja:hover{
+  background-color: rgba(255, 255, 255, 0.527);
+  width: 100%;
+  height: 102%;
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  opacity: 1;
+  padding: 0 25px;
+}
+.divLojaBtn{
+  width: 453px;
+  height: 90px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.divLojaBtn a{
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  max-width: 460px;
+  width: 90%;
+}
+.footerclass{
+  display: flex;
+}
+.form_section{
+  display: flex;
+  padding: 0 20% 0 20%;
+}
+.racaoInfo{
+  background-color: rgba(88, 88, 88, 0.77);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.racaoInfo:hover{
+  padding: 20px;
+  font-size: 20px;
+  background-color: rgb(88, 88, 88);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.tituloRacoes{
+padding: 1%;
+display: flex;
+justify-content: center;
+font-size: 30px;
 }
 .racaoInfo a{
-    text-decoration: inherit;
-    color: inherit;
+  text-decoration: inherit;
+  color: inherit;
 }
 .contatosDiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 10%;
-  }
-  .infoContatos {
-    max-width: 600px; /* Defina uma largura máxima para o conteúdo, se desejar */
-  }
-  
-  .titulocontacto1 {
-    color: #333; /* Cor do texto, se desejar alterar */
-  }
-  .contatosDiv img{
-   max-width: 80%;
-   border-radius: 5px;
-   margin-bottom: 10px;
-  }
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
-    display: none;
-    border-radius: 5px;
-  }
-  
-  .card:hover .overlay {
-    display: block;
-  }
-  .overlay button {
-    position: absolute;
-    top: 50%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-  }
-  .pet_redirect{
-    transition: 0.5s;
-  }
-  .pet_redirect:hover{
-    font-size: 19px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 10%;
+}
+.infoContatos {
+  max-width: 600px; /* Defina uma largura máxima para o conteúdo, se desejar */
+}
 
-  .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 300px;
-    max-height: 300px;
+.titulocontacto1 {
+  color: #333; /* Cor do texto, se desejar alterar */
+}
+.contatosDiv img{
+ max-width: 80%;
+ border-radius: 5px;
+ margin-bottom: 10px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
+  display: none;
+  border-radius: 5px;
+}
+
+.card:hover .overlay {
+  display: block;
+}
+.overlay button {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+.pet_redirect{
+  transition: 0.5s;
+}
+.pet_redirect:hover{
+  font-size: 19px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 300px;
+  max-height: 300px;
 }
 img.card-img-top {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  min-height: 170px;
-  max-height: 170px;
-  margin-top: 60px;
-  border-radius: 7px;
-  margin-left: 3%;
-  max-width: 180px;
+height: 100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+min-height: 170px;
+max-height: 170px;
+margin-top: 60px;
+border-radius: 7px;
+margin-left: 3%;
+max-width: 180px;
 }
 svg.addFavorites {
-  font-size: 25px;
+font-size: 25px;
 
 }
 svg.addFavorites:hover {
-  font-size: 27px;
-  transition: 1s;
-  cursor: pointer;
-  fill: rgb(218, 218, 7);
+font-size: 27px;
+transition: 1s;
+cursor: pointer;
+fill: rgb(218, 218, 7);
 }
 .row.pets > div:first-child {
-  display: none;
+display: none;
 }
 .descricao{
-  word-wrap: anywhere;
+word-wrap: anywhere;
+}
+section.form_section {
+margin-bottom: 100px;
+}
+
+.card.mb-4 {
+box-shadow: 0px 4px 16px rgb(0 0 0 / 31%);
+}
+.tabelas{
+  padding: 25px 3%;
+}
+th {
+  text-align: center;
+}
+td{
+  text-align: center;
+}
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.mensagem{
+  text-align: center;
+  font-size: 25px;
+  padding: 0 10% 25px ;
+}
+img#imgLogo {
+  width: 50px;
+}
+*, ::after, ::before {
+  box-sizing:unset;
+}
+.titulosobrenos{
+  margin: 0 10%;
+  text-align: center;
+  color: royalblue;
+}
+
+.textosobrenos{
+    margin: 0 10%;
+    text-align: justify;
+    color: royalblue;
+    
+}
+
+.titulosobresite{
+  margin: 0 10%;
+  text-align: center;
+  color: royalblue;
+}
+
+.textosobresite{
+  margin: 0 10%;
+  text-align: justify;
+  color: royalblue;
 }

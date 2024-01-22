@@ -25,6 +25,9 @@
           <div class="navContent">
             <ul class="nav nav-underline">
               <li class="nav-item">
+                <a class="nav-link" href="./index.html"><img id="imgLogo" src="assets/img/dog.png" alt="logo"></a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="./index.html">Página Principal</a>
               </li>
               <li class="nav-item">
@@ -32,9 +35,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./loja.html">Loja</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page"  href="./adotar.html">Adotar</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./favoritos.html">Favoritos</a>
@@ -52,42 +52,42 @@
 
       <h1 class="titulo1">Formulario de adoção</h1>
       <section class="form_section">
-        <form>
+        <form id="adoptionForm" onsubmit="return validateForm()">
           <div class="mb-3">
             <label for="InputName" class="form-label">Nome Completo</label>
-            <input type="email" class="form-control" id="InputName" aria-describedby="emailHelp">
+            <input type="text" class="form-control" id="InputName" aria-describedby="emailHelp" required>
           </div>
           <div class="mb-3">
             <label for="inputTelefone" class="form-label">Contacto telefónico:</label>
-            <input type="number" class="form-control" id="inputTelefone">
+            <input type="number" class="form-control" id="inputTelefone" required>
           </div>
           <div class="mb-3">
             <label for="horarioPreferencial" class="form-label">Horário preferencial de contacto:</label>
-            <input type="text" class="form-control" id="horarioPreferencial">
+            <input type="text" class="form-control" id="horarioPreferencial" required>
           </div>
           <div class="mb-3">
             <label for="emailInput" class="form-label">E-mail:</label>
-            <input type="email" class="form-control" id="emailInput">
+            <input type="email" class="form-control" id="emailInput" required>
           </div>
           <div class="mb-3">
             <label for="idade" class="form-label">Idade:</label>
-            <input type="number" class="form-control" id="idade">
+            <input type="number" class="form-control" id="idade" required>
           </div>
           <div class="mb-3">
             <label for="morada" class="form-label">Morada:</label>
-            <input type="text" class="form-control" id="morada">
+            <input type="text" class="form-control" id="morada" required>
           </div>
           <div class="mb-3">
             <label for="Cidade" class="form-label">Cidade:</label>
-            <input type="text" class="form-control" id="Cidade">
+            <input type="text" class="form-control" id="Cidade" required>
           </div>
           <div class="mb-3">
             <label for="Profissao" class="form-label">Profissão:</label>
-            <input type="text" class="form-control" id="Profissao">
+            <input type="text" class="form-control" id="Profissao" required>
           </div>
           <div class="mb-3">
-            <label for="AnimalEspecifico" class="form-label">Se gostaria de adoptar um animal específico, indique por favor o nome do animal.</label>
-            <input type="text" class="form-control" id="AnimalEspecifico">
+            <label for="AnimalEspecifico" class="form-label">Se gostaria de adotar um animal específico, indique por favor o nome do animal.</label>
+            <input type="text" class="form-control" id="AnimalEspecifico" required>
           </div>
           <div>Caso não procure adotar um animal específico, indique se tem preferência pelo sexo do animal:</div>
             <div class="form-check">
@@ -407,11 +407,16 @@
           <button type="submit" class="btn btn-primary">Enviar</button> 
         </form>
       </section>
-  </body>
     </div>
+    <footer class="bg-body-tertiary text-center text-lg-start">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2023 Adopt US
+      </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="assets/js/index.js"></script>
     <script src="assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/adotar.js"></script>
 
   </body>
   </html>
