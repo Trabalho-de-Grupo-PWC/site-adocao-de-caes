@@ -397,3 +397,27 @@ img#imgLogo {
 *, ::after, ::before {
   box-sizing:unset;
 }
+.titulosobrenos{
+  margin: 0 10%;
+  text-align: center;
+  color: royalblue;
+}
+
+.textosobrenos{
+    margin: 0 10%;
+    text-align: justify;
+    color: royalblue;
+    
+}
+
+.titulosobresite{
+  margin: 0 10%;
+  text-align: center;
+  color: royalblue;
+}
+
+.textosobresite{
+  margin: 0 10%;
+  text-align: justify;
+  color: royalblue;
+}
